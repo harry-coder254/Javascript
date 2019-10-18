@@ -1,0 +1,47 @@
+<html>
+<script>
+class Animal{
+
+constructor(name, color, weight) {
+    console.log("Created animal ",name)
+    this.name=name;
+    this.color=color;
+    this.weight=weight;
+
+}
+namelength(){
+
+    return this.name.length;
+}
+}
+
+class Dog extends Animal{
+constructor(name,color,weight,leashColor,barkVolume){
+    super(name,color,weight);
+this.leashColor=leashColor;
+this.barkVolume=barkVolume;
+
+}
+
+bark(){
+    if(this.barkVolume>50){
+        console.log("it barks loudly");
+    }
+    else{
+        console.log("It barks timidly");
+    }
+}
+}
+
+var king=new Dog("Geff","white",25,"red",80);
+king.bark();
+var mydog=new Animal("Fido", "black",20);
+console.log("the dog's name is",mydog.name);
+
+</script>
+<body>
+
+</body>
+
+
+</html>

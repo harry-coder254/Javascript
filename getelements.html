@@ -1,0 +1,32 @@
+<html>
+<head>
+    
+    <title> Javascript</title>
+       <script>
+    
+    function dyears(form){
+        
+        form.dogage.value=form.yourage.value*7;
+        return form.dogage.value;
+    }
+    </script>   
+    
+        
+<body>
+   
+    <form>
+    Enter your age:<input type="number" id="yourage">
+        <input type="button" value="Calculate" onclick="dyears(this.form)">
+        
+    The dog's years are:<input type="number" id="dogage">
+    
+    
+    </form>
+    
+</body>
+
+
+
+
+
+</html>
